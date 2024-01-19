@@ -41,3 +41,40 @@ Consider the schema for Movie Database: ACTOR(Act_id, Act_Name, Act_Gender) DIRE
 4.Find the title of movies and number of stars for each movie that has at least one rating and find the highest number of stars that movie received. Sort the result by movie title.
 
 5.Update rating of all movies directed by ‘Steven Spielberg’ to 5
+
+####################################################################################
+
+LAB PROGRAM - 04
+Consider the schema for College Database:
+STUDENT(USN, SName, Address, Phone, Gender)
+SEMSEC(SSID, Sem, Sec)
+CLASS(USN, SSID)
+COURSE(Subcode, Title, Sem, Credits)
+IAMARKS(USN, Subcode, SSID, Test1, Test2, Test3, FinalIA)
+Write SQL queries to
+1. List all the student details studying in fourth semester ‘C’ section.
+2. Compute the total number of male and female students in each semester and in each section.
+3. Create a view of Test1 marks of student USN ‘1BI15CS101’ in all Courses.
+4. Calculate the FinalIA (average of best two test marks) and update the corresponding table for all
+students.
+5. Categorize students based on the following criterion:
+If FinalIA = 17 to 20 then CAT = ‘Outstanding’
+If FinalIA = 12 to 16 then CAT = ‘Average’
+If FinalIA< 12 then CAT = ‘Weak’
+Give these details only for 8th semester A, B, and C section students.
+
+####################################################################################
+
+LAB PROGRAM - 05
+Consider the schema for Company Database:
+EMPLOYEE(SSN, Name, Address, Sex, Salary, SuperSSN, DNo)
+DEPARTMENT(DNo, DName, MgrSSN, MgrStartDate)
+DLOCATION(DNo,DLoc)
+PROJECT(PNo, PName, PLocation, DNo)
+WORKS_ON(SSN, PNo, Hours)
+Write SQL queries to
+1. Make a list of all project numbers for projects that involve an employee whose last name is ‘Scott’,
+either as a worker or as a manager of the department that controls the project.
+2. Show the resulting salaries if every employee working on the ‘IoT’ project is given a 10 percent raise.
+3. Find the sum of the salaries of all employees of the ‘Accounts’ department, as well as the maximum
+salary, the minimum salary, and the average salary in this department.
